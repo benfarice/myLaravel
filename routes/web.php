@@ -24,6 +24,14 @@ Route::get('/', function () {
 
 	});
 	*/
+	/*
+	Schema::table('programmers',function($myTable){
+		$myTable -> dropColumn('age');
+		$myTable -> string('fullname');
+		
+
+	});
+	*/
     return view('welcome');
 });
 Route::get('about', function () {
