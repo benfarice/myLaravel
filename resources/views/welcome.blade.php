@@ -63,6 +63,7 @@
                 margin-bottom: 30px;
             }
         </style>
+        <link rel="stylesheet" type="text/css" href="<?php echo asset('css/main.css') ?>">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -78,7 +79,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md myColor">
                     Laravel
                 </div>
 
