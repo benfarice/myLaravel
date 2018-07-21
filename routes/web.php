@@ -32,6 +32,15 @@ Route::get('/', function () {
 
 	});
 	*/
+
+
+	$coders = new App\coders;
+
+	$coders->name = "Imzoughene";
+	$coders->lastname="Youssef";
+	$coders->description="PHP programmer";
+	//$coders->fullname="imzoughene youssef";
+	$coders->save();
     return view('welcome');
 });
 Route::get('about', function () {

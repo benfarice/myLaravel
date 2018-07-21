@@ -1,0 +1,6 @@
+php artisan make:migration my_table_name
+-------------------------------------------
+php artisan migrate
+-------------------
+php artisan make:model my_model_name
+-------------------
