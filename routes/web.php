@@ -51,7 +51,7 @@ Route::get('/', function () {
 	*/
     //return view('welcome');
     //return view('hello');
-    return view('welcome',array('country'=>'Morocco'));
+    return view('welcome',array('country'=>'Morocco','city'=>'Casablanca','job'=>'developer'));
 });
 Route::get('about', function () {
     return "welcome to about page";

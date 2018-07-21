@@ -82,8 +82,27 @@
             <div class="content">
                 <div class="title m-b-md myColor">
                     Laravel live in {{$country}} at {{date('Y M d')}}
-                </div>
 
+                   
+
+
+
+
+                </div>
+                    @if($city)
+                    <p class="myColor">I have one city {{$city}}</p>
+                    @else
+                    <p class="myColor">I don't have any city !</p>
+                    @endif
+
+
+                    @if($job=="designer")
+                    <p class="myColor">I have another job {{$job}}</p>
+                    @elseif($job== "developer")
+                    <p class="myColor">I have just one job {{$job}}</p>
+                    @else
+                    <p class="myColor">Allah will be in my side : {{$job}}</p>
+                    @endif;
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
