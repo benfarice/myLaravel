@@ -103,6 +103,27 @@
                     @else
                     <p class="myColor">Allah will be in my side : {{$job}}</p>
                     @endif;
+
+
+                    <!--@for ($i=0;$i<10;$i++)
+                    <p class="myColor">
+                    The current value is {{$i}}
+                    </p>    
+                    @endfor-->
+
+                    <!--@foreach($student_names as $student)
+                    <p class="myColor">
+                        my family member {{$student}}
+                    </p>
+                    @endforeach
+                    -->
+                    @foreach($student_names as $student)
+                    @unless($student=='malika')
+                    <p class="myColor">
+                        my family member {{$student}}
+                    </p>
+                    @endunless
+                    @endforeach
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

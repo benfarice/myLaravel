@@ -51,7 +51,9 @@ Route::get('/', function () {
 	*/
     //return view('welcome');
     //return view('hello');
-    return view('welcome',array('country'=>'Morocco','city'=>'Casablanca','job'=>'developer'));
+$student_names = array('abd el aziz','abd el hamid','mohamed','malika','rachid');
+
+    return view('welcome',array('country'=>'Morocco','city'=>'Casablanca','job'=>'developer','student_names'=>$student_names));
 });
 Route::get('about', function () {
     return "welcome to about page";
