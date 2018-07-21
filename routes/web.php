@@ -24,6 +24,13 @@ Route::get('/', function () {
 
 	});
 	*/
+
+	$coders =  App\coders::find(1);
+	$coders->name = "fouaji";
+	$coders->save();
+	return $coders->name;
+
+
 	/*
 	Schema::table('programmers',function($myTable){
 		$myTable -> dropColumn('age');
@@ -33,7 +40,7 @@ Route::get('/', function () {
 	});
 	*/
 
-
+	/*
 	$coders = new App\coders;
 
 	$coders->name = "Imzoughene";
@@ -41,7 +48,8 @@ Route::get('/', function () {
 	$coders->description="PHP programmer";
 	//$coders->fullname="imzoughene youssef";
 	$coders->save();
-    return view('welcome');
+	*/
+    //return view('welcome');
 });
 Route::get('about', function () {
     return "welcome to about page";
