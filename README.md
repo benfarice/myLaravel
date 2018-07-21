@@ -1,2 +1,0 @@
-# myLaravel
-my Laravel project 
