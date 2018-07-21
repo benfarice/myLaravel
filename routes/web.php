@@ -24,12 +24,12 @@ Route::get('/', function () {
 
 	});
 	*/
-
+	/*
 	$coders =  App\coders::find(1);
 	$coders->name = "fouaji";
 	$coders->save();
 	return $coders->name;
-
+	*/
 
 	/*
 	Schema::table('programmers',function($myTable){
@@ -50,6 +50,8 @@ Route::get('/', function () {
 	$coders->save();
 	*/
     //return view('welcome');
+    //return view('hello');
+    return view('welcome',array('country'=>'Morocco'));
 });
 Route::get('about', function () {
     return "welcome to about page";

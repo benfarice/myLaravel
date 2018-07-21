@@ -4,3 +4,4 @@ php artisan migrate
 -------------------
 php artisan make:model my_model_name
 -------------------
+php artisan serve

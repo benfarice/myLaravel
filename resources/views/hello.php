@@ -63,8 +63,7 @@
                 margin-bottom: 30px;
             }
         </style>
-       <!-- <link rel="stylesheet" type="text/css" href="<?php //echo asset('css/main.css') ?>">-->
-       <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" type="text/css" href="<?php echo asset('css/main.css') ?>">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -81,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md myColor">
-                    Laravel live in {{$country}} at {{date('Y M d')}}
+                    Laravel
                 </div>
 
                 <div class="links">
