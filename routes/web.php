@@ -12,6 +12,18 @@
 */
 
 Route::get('/', function () {
+	/*
+	Schema::create('programmers',function($myTable){
+		$myTable -> increments('id');
+		$myTable -> string('name');//255 by default
+		$myTable -> string('lastname',30);
+		$myTable -> string('description',500);
+		$myTable -> string('age');
+		$myTable -> date('created');
+		$myTable -> timestamps();
+
+	});
+	*/
     return view('welcome');
 });
 Route::get('about', function () {
