@@ -49,14 +49,20 @@ Route::get('/', function () {
 	//$coders->fullname="imzoughene youssef";
 	$coders->save();
 	*/
-    //return view('welcome');
+    return view('welcome');
     //return view('hello');
+/*
 $student_names = array('abd el aziz','abd el hamid','mohamed','malika','rachid');
 
     return view('welcome',array('country'=>'Morocco','city'=>'Casablanca','job'=>'developer','student_names'=>$student_names));
+*/
 });
 Route::get('about', function () {
     return "welcome to about page";
+});
+
+Route::get('signup', function () {
+    return view("signup");
 });
 
 Route::get('about/me', function () {

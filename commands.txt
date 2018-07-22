@@ -5,3 +5,12 @@ php artisan migrate
 php artisan make:model my_model_name
 -------------------
 php artisan serve
+--------------------
+"laravelcollective/html":"^5.4"
+----------------
+Illuminate\Html\HtmlServiceProvider::class,
+Collective\Html\HtmlServiceProvider::class,
+-----------------
+'Form'=>'Illuminate\Html\FormFacade',
+'Html'=>'Illuminate\Html\HtmlFacade',
+------------------
