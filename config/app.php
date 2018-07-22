@@ -212,6 +212,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form'=>'Illuminate\Html\FormFacade',
         'Html'=>'Illuminate\Html\HtmlFacade',
+        'Input'=> Illuminate\Support\Facades\Input::class
 
     ],
 

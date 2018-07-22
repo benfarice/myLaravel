@@ -65,6 +65,15 @@ Route::get('signup', function () {
     return view("signup");
 });
 
+Route::post('thanks', function () {
+    
+
+	$yourEmail = Input::get('email');
+    return view("thanks")->with('yourEmail',$yourEmail);
+});
+
+
+
 Route::get('about/me', function () {
     return "welcome to about/me page";
 });
