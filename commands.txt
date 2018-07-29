@@ -20,4 +20,8 @@ php artisan session:table
 ---------------
 php artisan list
 --------
-
+@while(condition)
+@endwhile
+------
+@for($i=0;$i<10;$i++)
+@endfor

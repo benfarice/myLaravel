@@ -27,6 +27,10 @@ class pagesController extends Controller
     public function oussama(){
     	$name = "oussama";
     	$familyname="tamraoui";
-    	return view("friends.oussama",compact("name","familyname"));
+    	$frameworks = ["laravel",
+    	"symfony","CodeIgnitor",
+    	"cakePhp"
+    ];
+    	return view("friends.oussama",compact("name","familyname","frameworks"));
     }
 }
