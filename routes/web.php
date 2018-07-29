@@ -63,6 +63,7 @@ Route::get('about', function () {
 
 
 Route::get('soukaina',"pagesController@soukaina");
+Route::get('oussama',"pagesController@oussama");
 
 Route::get('signup', function () {
     return view("signup");

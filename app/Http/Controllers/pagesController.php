@@ -23,4 +23,10 @@ class pagesController extends Controller
     	$familyname="daurghal";
     	return view("friends.soka",compact("name","familyname"));
     }
+
+    public function oussama(){
+    	$name = "oussama";
+    	$familyname="tamraoui";
+    	return view("friends.oussama",compact("name","familyname"));
+    }
 }
