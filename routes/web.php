@@ -61,6 +61,9 @@ Route::get('about', function () {
     return "welcome to about page";
 });
 
+
+Route::get('soukaina',"pagesController@soukaina");
+
 Route::get('signup', function () {
     return view("signup");
 });
