@@ -7,6 +7,14 @@ php artisan migrate:rollback
 php artisan make:migration create_article_table --create=articles
 --
 php artisan make:migration add_slogan_to_articles --table="articles"
+-----
+php artisan make:model Article
+-----
+php artisan tinker
+----
+$article = new App\Article()
+----
+$article->titre.............
 -------------------
 php artisan make:model my_model_name
 -------------------
