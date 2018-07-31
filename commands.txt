@@ -14,8 +14,33 @@ php artisan tinker
 ----
 $article = new App\Article()
 ----
-$article->titre.............
--------------------
+$article->titre = "Imzoughene Youssef | Ubuntu"
+-----------------
+$article->contenu = "I love Ubuntu"
+----
+$article->date_publication = Carbon\Carbon::now()
+----
+$article->save()
+
+----
+$arts = App\Article::all()
+--
+$arts = App\Article::all()->toarray()
+---
+$ar = App\Article::find(1)
+--
+$p = App\Article::where('contenu','Ubuntu')->get()
+----
+$m = App\Article::find(1)
+--
+$m->slogan = "my slogan"
+--
+$m->save()
+--
+$m->delete()
+---
+php artisan make:controller ArticlesController
+--
 php artisan make:model my_model_name
 -------------------
 php artisan serve

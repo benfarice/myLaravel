@@ -65,6 +65,13 @@ Route::get('about', function () {
 Route::get('soukaina',"pagesController@soukaina");
 Route::get('oussama',"pagesController@oussama");
 
+
+Route::get('mvc',
+	"ArticlesController@index");
+
+Route::get('mvc/{id}',
+	"ArticlesController@show");
+
 Route::get('signup', function () {
     return view("signup");
 });
