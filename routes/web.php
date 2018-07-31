@@ -69,8 +69,17 @@ Route::get('oussama',"pagesController@oussama");
 Route::get('mvc',
 	"ArticlesController@index");
 
+
+Route::get('mvc/create',
+	"ArticlesController@create");
+
+
+Route::post('mvc',
+	"ArticlesController@store");
+
 Route::get('mvc/{id}',
 	"ArticlesController@show");
+
 
 Route::get('signup', function () {
     return view("signup");

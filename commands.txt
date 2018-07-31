@@ -64,3 +64,9 @@ php artisan list
 ------
 @for($i=0;$i<10;$i++)
 @endfor
+-----
+composer require "Illuminate/html":"5.0.*"
+-------
+//use Illuminate\Http\Request;
+use Request;
+------------

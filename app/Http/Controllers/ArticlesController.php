@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
+//use Illuminate\Http\Request;
+use Request;
 class ArticlesController extends Controller
 {
     public function index(){
@@ -16,5 +16,15 @@ class ArticlesController extends Controller
     public function show($id){
     	$acrticle = \App\Article::find($id);
     	return view('articles.show',compact('acrticle'));
+    }
+
+    public function create(){
+    	return view('articles.create');
+    }
+
+    public function store(){
+        //return Request::all();
+        \App\Article::create(Request::all());
+        return redirect('mvc');
     }
 }
