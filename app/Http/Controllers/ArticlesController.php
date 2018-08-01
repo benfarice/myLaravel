@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 //use Illuminate\Http\Request;
 use Request;
+use App\Http\Requests\ArticlesRequest;
 class ArticlesController extends Controller
 {
     public function index(){
@@ -22,7 +23,7 @@ class ArticlesController extends Controller
     	return view('articles.create');
     }
 
-    public function store(){
+    public function store(ArticlesRequest $request){
         //return Request::all();
         \App\Article::create(Request::all());
         return redirect('mvc');

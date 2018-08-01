@@ -4,6 +4,18 @@
 
 <h1>Nouveau Article</h1>
 <hr>
+
+<ul>
+	@foreach($errors->all() as $message)
+	<li>{{$message}}</li>
+	@endforeach
+</ul>
+
+
+
+
+
+
 {!! Form::open(['url'=>'mvc']) !!}
 	<div class="form-group">
 	{!! Form::label('titre','Un titre : ') !!}
